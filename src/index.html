@@ -3,62 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Memory Game</title>
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./assets/icons/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.css">
-    <script src="./001.js" defer></script>
+    <script src="./main.js" defer></script>
 </head>
-<body>
-    <div id="container" class=" max-w-[800px] aspect-square bg-red-500 grid grid-cols-4 gap-2">
-        <div class="box bg-blue-500 flex justify-center items-center">
-            <i class="fa-solid fa-pizza-slice text-4xl"></i>
-        </div>
-        <div class="box  bg-blue-500 flex justify-center items-center">
-            <i class="fa-solid fa-pizza-slice text-4xl"></i>
-        </div>
-        <div class="box  bg-blue-500 flex justify-center items-center">
-            <i class="fa-solid fa-burger text-4xl"></i>
-        </div>
-        <div class="box  bg-blue-500 flex justify-center items-center">
-            <i class="fa-solid fa-burger text-4xl"></i>
-        </div>
-        <div class="box  bg-blue-500 flex justify-center items-center">
-            <i class="fa-solid fa-hotdog text-4xl"></i>
-        </div>
-        <div class="box  bg-blue-500 flex justify-center items-center">
-            <i class="fa-solid fa-hotdog text-4xl"></i>
-        </div>
-        <div class="box  bg-blue-500 flex justify-center items-center">
-            <i class="fa-solid fa-cheese text-4xl"></i>
-        </div>
-        <div class="box  bg-blue-500 flex justify-center items-center">
-            <i class="fa-solid fa-cheese text-4xl"></i>
-        </div>
-        <div class="box  bg-blue-500 flex justify-center items-center">
-            <i class="fa-solid fa-cake-candles text-4xl"></i>
-        </div>
-        <div class="box  bg-blue-500 flex justify-center items-center">
-            <i class="fa-solid fa-cake-candles text-4xl"></i>
-        </div>
-        <div class="box  bg-blue-500 flex justify-center items-center">
-            <i class="fa-solid fa-egg text-4xl"></i>
-        </div>
-        <div class="box  bg-blue-500 flex justify-center items-center">
-            <i class="fa-solid fa-egg text-4xl"></i>
-        </div>
-        <div class="box  bg-blue-500 flex justify-center items-center">
-            <i class="fa-solid fa-bacon text-4xl"></i>
-        </div>
-        <div class="box  bg-blue-500 flex justify-center items-center">
-            <i class="fa-solid fa-bacon text-4xl"></i>
-        </div>
-        <div class="box  bg-blue-500 flex justify-center items-center">
-            <i class="fa-solid fa-bowl-food text-4xl"></i>
-        </div>
-        <div class="box  bg-blue-500 flex justify-center items-center">
-            <i class="fa-solid fa-bowl-food text-4xl"></i>
-        </div>
-      </div>
+<body class="bg-yellow-300">
+    <div class="flex justify-center items-center">
+        <div id="container" class=" max-w-[800px] aspect-square bg-yellow-300 grid grid-cols-4 gap-2">
+            <div class="box border-black border-solid border-4 rounded-xl bg-white flex justify-center items-center">
+                <i class="fa-solid fa-pizza-slice text-4xl"></i>
+            </div>
+            <div class="box border-black border-solid border-4 rounded-xl  bg-white flex justify-center items-center">
+                <i class="fa-solid fa-pizza-slice text-4xl"></i>
+            </div>
+            <div class="box border-black border-solid border-4 rounded-xl  bg-white flex justify-center items-center">
+                <i class="fa-solid fa-burger text-4xl"></i>
+            </div>
+            <div class="box border-black border-solid border-4 rounded-xl  bg-white flex justify-center items-center">
+                <i class="fa-solid fa-burger text-4xl"></i>
+            </div>
+            <div class="box border-black border-solid border-4 rounded-xl  bg-white flex justify-center items-center">
+                <i class="fa-solid fa-hotdog text-4xl"></i>
+            </div>
+            <div class="box border-black border-solid border-4 rounded-xl  bg-white flex justify-center items-center">
+                <i class="fa-solid fa-hotdog text-4xl"></i>
+            </div>
+            <div class="box border-black border-solid border-4 rounded-xl  bg-white flex justify-center items-center">
+                <i class="fa-solid fa-cheese text-4xl"></i>
+            </div>
+            <div class="box border-black border-solid border-4 rounded-xl  bg-white flex justify-center items-center">
+                <i class="fa-solid fa-cheese text-4xl"></i>
+            </div>
+            <div class="box border-black border-solid border-4 rounded-xl  bg-white flex justify-center items-center">
+                <i class="fa-solid fa-cake-candles text-4xl"></i>
+            </div>
+            <div class="box border-black border-solid border-4 rounded-xl  bg-white flex justify-center items-center">
+                <i class="fa-solid fa-cake-candles text-4xl"></i>
+            </div>
+            <div class="box border-black border-solid border-4 rounded-xl  bg-white flex justify-center items-center">
+                <i class="fa-solid fa-egg text-4xl"></i>
+            </div>
+            <div class="box border-black border-solid border-4 rounded-xl  bg-white flex justify-center items-center">
+                <i class="fa-solid fa-egg text-4xl"></i>
+            </div>
+            <div class="box border-black border-solid border-4 rounded-xl  bg-white flex justify-center items-center">
+                <i class="fa-solid fa-bacon text-4xl"></i>
+            </div>
+            <div class="box border-black border-solid border-4 rounded-xl  bg-white flex justify-center items-center">
+                <i class="fa-solid fa-bacon text-4xl"></i>
+            </div>
+            <div class="box border-black border-solid border-4 rounded-xl  bg-white flex justify-center items-center">
+                <i class="fa-solid fa-bowl-food text-4xl"></i>
+            </div>
+            <div class="box border-black border-solid border-4 rounded-xl  bg-white flex justify-center items-center">
+                <i class="fa-solid fa-bowl-food text-4xl"></i>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <h1 class="font-bold text-2xl">score:</h1>
+            <span id="scoreCounter" class="text-2xl">0</span>
+          </div>
+    </div>
 </body>
 </html>

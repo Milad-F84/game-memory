@@ -1,6 +1,8 @@
 //DOM NODES
 let boxes = [...document.querySelectorAll(".box")];
 const container = document.getElementById("container");
+let scoreCounter = 0;
+const scoreTemp = document.getElementById("scoreCounter");
 const boxHistory = [];
 function hideAll() {
   for (const box of boxes) {
@@ -22,6 +24,8 @@ function handleClick(evt) {
       boxHistory[1].firstElementChild.getAttribute("class")
     ) {
       matchCards();
+      scoreCounter++;
+      scoreTemp.innerHTML = scoreCounter;
     } else {
       unmatchCards();
     }
