@@ -30,57 +30,60 @@ function handleClick(evt) {
       unmatchCards();
     }
   }
+  if (scoreCounter === 8) {
+    alert("Congratulations, you won this game");
+  }
 }
-function matchCards(){
-    boxHistory[0].classList.add("matched");
-    boxHistory[1].classList.add("matched");
-    boxHistory.length = 0;
+function matchCards() {
+  boxHistory[0].classList.add("matched");
+  boxHistory[1].classList.add("matched");
+  boxHistory.length = 0;
 }
 const unmatchCards = () => {
-    freezeAll();
-    boxHistory[0].classList.add("unmatched");
-    boxHistory[1].classList.add("unmatched");
+  freezeAll();
+  boxHistory[0].classList.add("unmatched");
+  boxHistory[1].classList.add("unmatched");
 
-    setTimeout(() => {
-        boxHistory[0].classList.add("hidden-content");
-        boxHistory[1].classList.add("hidden-content");
-        boxHistory[0].classList.remove("unmatched");
-        boxHistory[1].classList.remove("unmatched");
-        unfreezeAll();
-        boxHistory.length = 0;
-    }, 1000);
+  setTimeout(() => {
+    boxHistory[0].classList.add("hidden-content");
+    boxHistory[1].classList.add("hidden-content");
+    boxHistory[0].classList.remove("unmatched");
+    boxHistory[1].classList.remove("unmatched");
+    unfreezeAll();
+    boxHistory.length = 0;
+  }, 1000);
 };
 
-function freezeAll(){
-    for (const box of boxes) {
-        box.classList.add("freeze");
-    }
+function freezeAll() {
+  for (const box of boxes) {
+    box.classList.add("freeze");
+  }
 }
 
-function unfreezeAll(){
-    for (const box of boxes) {
-        box.classList.remove("freeze");
-    }
+function unfreezeAll() {
+  for (const box of boxes) {
+    box.classList.remove("freeze");
+  }
 }
 
-function shuffleCards(){
-    for(let i = 0; i< boxes.length; i++){
-        const rnd = Math.floor(Math.random()* boxes.length);
-        const temp = boxes[rnd];
-        boxes[rnd] = boxes[i];
-        boxes[i] = temp;
-    }
-    const template = boxes
+function shuffleCards() {
+  for (let i = 0; i < boxes.length; i++) {
+    const rnd = Math.floor(Math.random() * boxes.length);
+    const temp = boxes[rnd];
+    boxes[rnd] = boxes[i];
+    boxes[i] = temp;
+  }
+  const template = boxes
     .map((item) => {
-        return item.outerHTML;
+      return item.outerHTML;
     })
     .join("");
-    container.innerHTML = template;
-    boxes = document.querySelectorAll(".box")
+  container.innerHTML = template;
+  boxes = document.querySelectorAll(".box");
 }
 shuffleCards();
 
 //EVENTS
 for (const box of boxes) {
-    box.addEventListener("click", handleClick);
+  box.addEventListener("click", handleClick);
 }
