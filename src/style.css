@@ -14,3 +14,6 @@
 .freeze{
     pointer-events: none;
 }
+.winner{
+    display: none;
+}

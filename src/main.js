@@ -11,7 +11,7 @@ function hideAll() {
 }
 setTimeout(() => {
   hideAll();
-}, 1000);
+}, 1500);
 function handleClick(evt) {
   evt.target.classList.remove("hidden-content");
   evt.target.classList.add("freeze");
@@ -31,7 +31,9 @@ function handleClick(evt) {
     }
   }
   if (scoreCounter === 8) {
-    alert("Congratulations, you won this game");
+    setTimeout(() => {
+      alert("Congratulations, you won this game");
+    },10);
   }
 }
 function matchCards() {
