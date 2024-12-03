@@ -4,6 +4,8 @@ const container = document.getElementById("container");
 let scoreCounter = 0;
 const scoreTemp = document.getElementById("scoreCounter");
 const boxHistory = [];
+const winnerScore = document.getElementById("winnerScore");
+const winnerContainer = document.getElementById("winnwrDiv");
 function hideAll() {
   for (const box of boxes) {
     box.classList.add("hidden-content");
@@ -32,7 +34,10 @@ function handleClick(evt) {
   }
   if (scoreCounter === 8) {
     setTimeout(() => {
-      alert("Congratulations, you won this game");
+      winnerContainer.classList.remove("winner");
+      winnerContainer.classList.add("show-winner");
+      winnerScore.innerHTML = "";
+      container.innerHTML = "";
     },10);
   }
 }

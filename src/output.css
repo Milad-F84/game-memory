@@ -632,14 +632,6 @@ video {
   height: 0.25rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.max-w-\[800px\] {
-  max-width: 800px;
-}
-
 .shrink {
   flex-shrink: 1;
 }
@@ -729,6 +721,10 @@ video {
 .bg-yellow-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(253 224 71 / var(--tw-bg-opacity));
+}
+
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-2xl {
