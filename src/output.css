@@ -600,10 +600,6 @@ video {
   border-width: 0;
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
@@ -630,6 +626,22 @@ video {
 
 .h-1 {
   height: 0.25rem;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-\[133px\] {
+  height: 133px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-\[133px\] {
+  max-width: 133px;
 }
 
 .shrink {
